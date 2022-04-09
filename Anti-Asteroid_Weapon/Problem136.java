@@ -9,12 +9,14 @@ public class Problem136
 			for (int testcase = 0; testcase < testCases; testcase++)
 			{
 				int asteroids = Integer.parseInt(input.nextLine());
+				double[] distances = new double[asteroids];
 				for (int i=0; i<asteroids; i++)
 				{
 					String[] values = input.nextLine().split(" ");
 					double d = Math.hypot(Integer.parseInt(values[0]), Integer.parseInt(values[1]));
-					System.out.println(d);
+					distances[i] = d;
 				}
+
 			}
 		}
 	}
